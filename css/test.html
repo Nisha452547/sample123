@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+            gap: 10px;
+        }
+        .one{
+            padding: 10px;
+            background-color: blue;
+        }
+        .two{
+            padding: 10px;
+            background-color: chartreuse;
+        }
+        .three{
+            padding: 10px;
+            background-color: deeppink;
+        }
+        .four{
+            padding: 10px;
+            background-color: palevioletred;
+        }
+        .header{
+            grid-column: 1/5;
+        }
+        .sidebar{
+            grid-row: 2/4;
+        }
+        .content{
+            grid-column: 2/5;
+            grid-row: 2/4;
+        }
+        .footer{
+            grid-column: 1/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="header one">Header</div>
+        <div class="sidebar two">Sidebar</div>
+        <div class="content three">Content</div>
+        <div class="footer four">Footer</div>
+    </div>
+</body>
+</html>
