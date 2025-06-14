@@ -6,33 +6,30 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="">
+    <form id="form">
         <h1>Login</h1>
-        <label for="name">Name:</label>
-        <input type="text" placeholder="Enter your name" required>
-        <br></br>
-        <label for=" mobile number">Number</label>
-        <input type=" mobile number" placeholder="enter number" maxlength="10">
-        <br></br>
+       
         <label for="email">Email:</label>
-        <input type="email" placeholder="Enter your email" required>
+        <input id="email" type="email" placeholder="Enter your email" required>
         <br></br>
         <label for="password">Password:</label>
-        <input type="password" placeholder="enter password" required maxlength="6">
+        <input id="password" type="password" placeholder="enter password" required maxlength="6">
         <br></br>
-        <label for="feedback">Feedback</label>
-        <textarea name="feedback" id="feedback" placeholder="type your feedback"></textarea>
-        <br></br>
-        <label for="select">Select</label>
-        <select name="gender" id="gender">
-            <option value="">select</option>
-            <option value="">Male</option>
-            <option value="">Female</option>
-        </select>
-        <br></br>
+        
         <button>Submit</button>
+        <h1 id="result1"></h1>
+        <h1 id="result2"></h1>
 
     </form>
+    <script>
+        document.getElementById("form").addEventListener("submit",function(e) )
+        e.preventDefault();
+        const email=document.getElementById("email").value;
+        const passworrd=document.getElementById("password").value;
+        console.log(email,password)
+        document.getElementById("result1").textContent=email
+         document.getElementById("result2").textContent=password
+    </script>
     
 </body>
 </html>
