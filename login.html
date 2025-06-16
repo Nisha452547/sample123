@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>student form</title>
 </head>
 <body>
     <form id="form">
-        <h1>Login</h1>
+        <h1>STUDENT FORM</h1>
        
-        <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="Enter your email" required>
+        <label for="name">Name:</label>
+        <input id="name" type="name" placeholder="Enter name" required>
         <br></br>
-        <label for="password">Password:</label>
-        <input id="password" type="password" placeholder="enter password" required maxlength="6">
+        <label for="dept">Department:</label>
+        <input id="dept" type="text" placeholder="Enter department" required maxlength="6">
         <br></br>
         
         <button>Submit</button>
@@ -22,13 +22,13 @@
 
     </form>
     <script>
-        document.getElementById("form").addEventListener("submit",function(e) )
+        document.getElementById("form").addEventListener("submit",function(e){
         e.preventDefault();
-        const email=document.getElementById("email").value;
-        const passworrd=document.getElementById("password").value;
-        console.log(email,password)
-        document.getElementById("result1").textContent=email
-         document.getElementById("result2").textContent=password
+        const email=document.getElementById("name").value;
+        const passworrd=document.getElementById("dept").value;
+        console.log(name,dept)
+        document.getElementById("result1").textContent=name
+        document.getElementById("result2").textContent=dept})
     </script>
     
 </body>
